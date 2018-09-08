@@ -1,0 +1,380 @@
+/* Import Fonts */
+@font-face {
+  font-family: "HelveticaNeue-Thin";
+  src: local("fonts/HelveticaNeue-Thin.otf"),
+    url("fonts/HelveticaNeue-Thin.otf") format("opentype");
+}
+
+/* General CSS */
+
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "HelveticaNeue-Thin";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Helper CSS */
+
+.text-center {
+  text-align: center;
+}
+
+/* Header CSS */
+
+#header {
+  background: url("../images/hero.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  padding: 4.5rem 0 0 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+.navbar__nav {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 1.5rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  transition: border-bottom 0.1s;
+  font-size: 1.3rem;
+}
+
+.navbar__nav:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cta__info {
+  width: 50%;
+}
+
+.cta__info__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 5.2rem;
+  color: #ffffff;
+  line-height: 6rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.cta__info__para {
+  font-family: "HelveticaNeue-Thin";
+  font-size: 3.6rem;
+  color: #ffffff;
+  line-height: 4rem;
+  margin-bottom: 5rem;
+  padding-right: 10rem;
+}
+
+.cta__info__btn {
+  width: 32rem;
+  display: flex;
+  align-items: center;
+  background: #282828;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+}
+
+.cta__info__btn__img {
+  margin-right: 2rem;
+}
+
+.cta__info__btn__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cta__phone {
+  width: 50%;
+  overflow: hidden;
+  height: 64rem;
+}
+
+.cta__phone__img {
+  margin-left: 7rem;
+}
+
+/* Features CSS */
+
+#features {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 8.5rem 0;
+}
+
+.features__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  margin-bottom: 3rem;
+}
+
+.features__para {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: #3a3a3a;
+  margin-bottom: 3rem;
+  padding: 0 20rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.col-4 {
+  width: 33.33%;
+  height: auto;
+  padding: 0 5rem;
+}
+
+.col__features__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 2rem 0;
+}
+
+.col__features__para {
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  font-weight: bold;
+  color: #646464;
+}
+
+/* Download Section */
+
+#download {
+  width: 100%;
+  height: auto;
+  padding: 20rem 0;
+  background: url("../images/about.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.download__info {
+  width: 50%;
+}
+
+.download__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 4.5rem;
+  color: #ffffff;
+  line-height: 6rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.reddish {
+  color: #f55150;
+}
+
+.download__para {
+  font-family: "HelveticaNeue-Thin";
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  color: #585858;
+  width: 50%;
+  margin-bottom: 5rem;
+}
+
+.download__btn {
+  display: inline-block;
+  background: #d9332d;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Footer CSS */
+
+#footer {
+  width: 100%;
+  height: auto;
+  background: #2e2e38;
+  padding: 12rem 0;
+}
+
+#footer .container .row .col-4,
+#footer .container .row {
+  padding: 0;
+}
+
+.footer__logo {
+  margin-bottom: 3rem;
+}
+
+.footer__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.footer__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.footer__row__img {
+  margin-right: 2rem;
+}
+
+.footer__row__para {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  font-weight: 400;
+  color: #ffffff;
+  width: 50%;
+}
+
+.footer__row__h5 {
+  color: #ffffff;
+}
+
+.footer__row__h6 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.footer__row__p {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  font-weight: 400;
+  width: 60%;
+  margin-bottom: 2rem;
+}
+
+/* Copy CSS */
+
+#copy {
+  width: 100%;
+  height: auto;
+  padding: 5rem 0;
+  background: #d7dedc;
+}
+
+.copy__para {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#copy .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy__social {
+  margin-left: 2rem;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1172px) {
+  .cta__phone {
+    display: none;
+  }
+  .cta__info {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  .cta__info__para {
+    padding-right: 0;
+  }
+  .container {
+    padding: 0 2rem;
+  }
+  .download__info {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .features__para {
+    padding: 0;
+  }
+  .row {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .col-4 {
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+  .footer__logo {
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+  }
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__logo {
+    margin: 0 auto;
+  }
+}
